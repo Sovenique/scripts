@@ -4,6 +4,7 @@ wget https://github.com/prometheus/node_exporter/releases/download/v1.0.0-rc.1/n
 tar -xzf node_exporter-1.0.0-rc.1.linux-amd64.tar.gz && \
 rm -f node_exporter-1.0.0-rc.1.linux-amd64.tar.gz && \
 cat << EOF > /etc/systemd/system/node_exporter.service
+
 [Unit]
 Description=node_exporter
 Wants=network-online.target
